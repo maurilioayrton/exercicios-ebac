@@ -1,0 +1,9 @@
+#compilação do SASS;
+#compressão de imagens disponibilizadas no Material de apoio;
+#compressão de código JavaScript.
+
+Rode os comandos:
+- npm install gulp-sass (para instalar o plugin do gulp que compila os arquivos scss)
+- npm install gulp (para instalar o gulp para não precisar rodar npm)
+- npm install gulp-uglify (para comprimir o contudo javascrip)
+- npm install gulp-imagemin@7.1.0 (para comprimir imagens(colocamos a versão pois o require só funciona na verssão 7))
