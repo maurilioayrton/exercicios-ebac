@@ -1,0 +1,15 @@
+# 1 - instale o cli de forma globa do grunt
+- npm i -g grunt-cli
+
+# 2 - Inicalize npm
+- npm init
+
+# 3 - Instale as dependencias do grunt
+- npm i --save-dev grunt
+
+# 4 - Istale as dependencias do LESS, SASS, e CONCURRENT
+- npm i --save-dev grunt-contrib-less
+- npm i --save-dev grunt-concurrent
+- npm i --save-dev grunt-contrib-sass
+
+obs.: tem que adicionar o script do grunt no package.json ("grunt": "grunt")
