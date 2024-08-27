@@ -4,22 +4,9 @@
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
-@media (max-width: 767px) {
-  .products {
-    display: block;
-  }
-  .product-item {
-    margin-bottom: 32px;
-  }
-}
-@media (max-width: 1023px) {
-  .container {
-    max-width: 80%;
-  }
-  .products {
-    grid-template-columns: repeat(2, 48.5%);
-    column-gap: 3%;
-  }
+#cor {
+  botaomobile: red;
+  botaotablet: yellowgreen;
 }
 body {
   background-color: #f5f6fa;
@@ -82,4 +69,44 @@ section .products img {
 }
 .product-button:hover {
   background-color: #4cd137;
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+  .product-item a {
+    background-color: red;
+  }
+  section {
+    padding: 56px 0;
+  }
+  section .products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 98.66%);
+  }
+  section .products img {
+    width: 100%;
+    border-radius: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+  .container .product-item a {
+    background-color: yellowgreen;
+  }
+  .container .products {
+    padding-bottom: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 48.99%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+  }
+  .container .products img {
+    width: 100%;
+    border-radius: 16px;
+  }
 }
